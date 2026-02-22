@@ -1,0 +1,45 @@
+{
+  "name": "env-required",
+  "version": "1.0.1",
+  "description": "Ensures required environment variables exist, failing fast if they are missing.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "env",
+    "environment",
+    "required",
+    "validation",
+    "config",
+    "dotenv"
+  ],
+  "author": "Ahmer Arain",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/me-npm/env-required"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
