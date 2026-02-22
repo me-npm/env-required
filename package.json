@@ -1,6 +1,6 @@
 {
   "name": "env-required",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Ensures required environment variables exist, failing fast if they are missing.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
